@@ -8,6 +8,9 @@ namespace BeerTracker.Controllers
 {
     public class BeersController : Controller
     {
-
+        public string Detail()
+        {
+            return "Hello from the beers controller!";
+        }
     }
 }
