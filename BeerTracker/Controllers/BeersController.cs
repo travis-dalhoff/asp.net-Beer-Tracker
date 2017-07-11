@@ -11,10 +11,7 @@ namespace BeerTracker.Controllers
         public ActionResult Detail()
         {
 
-            return new ContentResult()
-            {
-                Content = "Hello from the beers controller!"
-            };
+            return View();
 
         }
     }
