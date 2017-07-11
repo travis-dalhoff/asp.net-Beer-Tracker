@@ -1,31 +1,19 @@
 ﻿@{
-    Layout = null;
-
-    
-
+    Layout = "~/Views/Shared/_Layout.cshtml";
+    ViewBag.Title = "Beer Detail";
 }
 
-<!DOCTYPE html>
 
-<html>
-<head>
-    <meta name="viewport" content="width=device-width" />
-    <title></title>
-</head>
-<body>
-    <div>
-        <h1>Beer:</h1>
-        <h1>@ViewBag.BeerName</h1>
-        <h2>Brewery:</h2>
-        <h2>@ViewBag.BreweryName</h2>
-        <h5>Style:</h5>
-        <h5>@ViewBag.Style</h5>
-        <h5>IBU:</h5>
-        <h5>@ViewBag.Ibu</h5>
-        <h5>ABV:</h5>
-        <h5>@ViewBag.Abv</h5>
-        <h5>Description:</h5>
-        <div>@Html.Raw(ViewBag.Description)</div>
-    </div>
-</body>
-</html>
+    <h1>Beer:</h1>
+    <h1>@ViewBag.BeerName</h1>
+    <h2>Brewery:</h2>
+    <h2>@ViewBag.BreweryName</h2>
+    <h5>Style:</h5>
+    <h5>@ViewBag.Style</h5>
+    <h5>IBU:</h5>
+    <h5>@ViewBag.Ibu</h5>
+    <h5>ABV:</h5>
+    <h5>@ViewBag.Abv</h5>
+    <h5>Description:</h5>
+    <div>@Html.Raw(ViewBag.Description)</div>
+    
