@@ -1,12 +1,7 @@
 ﻿@{
     Layout = null;
 
-    var beerName = "Breakfast Stout";
-    var breweryName = "Founders";
-    var style = "Imperial Stout";
-    var ibu = 60;
-    var abv = 8.3;
-    var description = "<p>Really good beer!</p>";
+    
 
 }
 
@@ -19,13 +14,18 @@
 </head>
 <body>
     <div>
-        <h1>@beerName</h1>
-        <h2>@breweryName</h2>
-        <h5>@style</h5>
-        <h5>@ibu</h5>
-        <h5>@abv</h5>
+        <h1>Beer:</h1>
+        <h1>@ViewBag.BeerName</h1>
+        <h2>Brewery:</h2>
+        <h2>@ViewBag.BreweryName</h2>
+        <h5>Style:</h5>
+        <h5>@ViewBag.Style</h5>
+        <h5>IBU:</h5>
+        <h5>@ViewBag.Ibu</h5>
+        <h5>ABV:</h5>
+        <h5>@ViewBag.Abv</h5>
         <h5>Description:</h5>
-        <div>@Html.Raw(description)</div>
+        <div>@Html.Raw(ViewBag.Description)</div>
     </div>
 </body>
 </html>
