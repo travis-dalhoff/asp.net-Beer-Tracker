@@ -8,9 +8,14 @@ namespace BeerTracker.Controllers
 {
     public class BeersController : Controller
     {
-        public string Detail()
+        public ActionResult Detail()
         {
-            return "Hello from the beers controller!";
+
+            return new ContentResult()
+            {
+                Content = "Hello from the beers controller!"
+            };
+
         }
     }
 }
